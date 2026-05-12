@@ -8,7 +8,10 @@ export default function Project() {
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6">
         {projects.map((project) => (
-          <div key={project.title} className="border p-4 md:p-6 rounded">
+          <div
+            key={project.title}
+            className="border p-4 md:p-6 rounded shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+          >
             <h3 className="font-bold">{project.title}</h3>
             <p className="text-gray-600 text-sm">{project.description}</p>
             <div className="flex flex-wrap gap-2 mt-2">
@@ -22,16 +25,18 @@ export default function Project() {
               ))}
             </div>
 
-            {project.link && (
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-4 bg-blue-600 text-white rounded hover:bg-blue-700 transition text-sm"
-              >
-                View Project
-              </a>
-            )}
+            <div className="mt-4">
+              {project.link && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 text-sm"
+                >
+                  View Project →
+                </a>
+              )}
+            </div>
           </div>
         ))}
       </div>

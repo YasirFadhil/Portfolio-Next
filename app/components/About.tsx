@@ -6,10 +6,10 @@ export default function About() {
       <h2 className="text-3xl md:text-4xl font-bold mb-8">About Me</h2>
       <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-4 md:mb-6">
         Hello, my name is {user.name}, and usually called {user.nick}. I was
-        born on {user.birthdate}. And right now, I'm {user.age} years old.
+        born on {user.birthdate}. And right now, I&apos;m {user.age} years old.
       </p>
       <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-4 md:mb-6">
-        I'm a fresh graduate from {studies[3].school}. I have interests in{" "}
+        I&apos;m a fresh graduate from {studies[3].school}. I have interests in{" "}
         {skills.map((skill) => skill.name).join(", ")}. My goal is to{" "}
         {user.goal}.
       </p>

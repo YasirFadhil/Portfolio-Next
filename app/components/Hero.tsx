@@ -6,8 +6,25 @@ export default function Hero() {
           Hi, Im Yassir
         </h1>
         <p className="text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-400">
-          Photographer • Freshgrade
+          Freshgrade • SMK Negeri 1 Klaten
         </p>
+      </div>
+
+      <div className="flex gap-4 mt-4 justify-center">
+        <a
+          href="/resume.pdf"
+          download="Muchammad_Yassir_Nur_Fadillah_CV.pdf"
+          className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 hover:shadow-md transition-all duration-300"
+        >
+          Download Resume
+        </a>
+
+        <a
+          href="#contact"
+          className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 hover:shadow-md transition-all duration-300"
+        >
+          Get in Touch
+        </a>
       </div>
     </section>
   );

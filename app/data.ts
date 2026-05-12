@@ -36,6 +36,7 @@ export const skills: Skills[] = [
   { name: "Design", level: "Newbie" },
   { name: "Programming", level: "Newbie" },
   { name: "Photography", level: "Intermediate" },
+  { name: "Electronics", level: "Intermediate" },
 ];
 
 export interface Project {
@@ -103,9 +104,49 @@ export interface Social {
 
 export const socials: Social[] = [
   { name: "Instagram", url: "https://www.instagram.com/ysirnf_" },
+  {
+    name: "Facebook",
+    url: "https://www.facebook.com/profile.php?id=61556773730917",
+  },
   { name: "GitHub", url: "https://github.com/YasirFadhil" },
-  { name: "X(Twitter)", url: "https://x.com/ysirnf" },
-  { name: "TikTok", url: "https://www.tiktok.com/@ysirnf" },
+  { name: "X(Twitter)", url: "https://x.com/@ysirnf_" },
+  { name: "TikTok", url: "https://www.tiktok.com/@ysirnf_" },
+];
+
+export interface Certification {
+  title: string;
+  issuer: string;
+  date: string;
+  description: string;
+}
+
+export const certifications: Certification[] = [
+  {
+    title: "Sertifikat Hasil Tes Kemampuan Akademik",
+    issuer: "Ministry of Education, Republic of Indonesia",
+    date: "5-6 November 2025",
+    description:
+      "National Academic Ability Test Certificate - Required to continue to enroll in a university",
+  },
+  {
+    title: "Sertifikat Praktik Kerja Lapangan",
+    issuer: "SMK Negeri 1 Klaten, SMP Negeri 5 Klaten",
+    date: "November 2025 - March 2026",
+    description:
+      "A final lesson in final semester as a graduation requirements",
+  },
+  {
+    title: "Sertifikasi Kompetensi Keahlian",
+    issuer: "",
+    date: "April 2026",
+    description: "",
+  },
+  {
+    title: "TOEFL Certification",
+    issuer: "",
+    date: "",
+    description: "",
+  },
 ];
 
 export interface Link {

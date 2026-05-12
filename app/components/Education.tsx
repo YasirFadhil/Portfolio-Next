@@ -8,7 +8,10 @@ export default function Study() {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
         {studies.map((study) => (
-          <div key={study.school} className="border p-4 md:p-6 rounded">
+          <div
+            key={study.school}
+            className="border p-4 md:p-6 rounded shadow-md hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+          >
             <h3 className="font-bold text-lg mb-2">{study.school}</h3>
             <p className="text-gray-600 dark:text-gray-400">{study.year}</p>
           </div>

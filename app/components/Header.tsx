@@ -55,6 +55,15 @@ export default function Header() {
             </li>
             <li>
               <a
+                href="#certification"
+                onClick={closeMenu}
+                className="block hover:text-blue-600 dark:hover:text-blue-400 transition"
+              >
+                Certification
+              </a>
+            </li>
+            <li>
+              <a
                 href="#projects"
                 onClick={closeMenu}
                 className="block hover:text-blue-600 dark:hover:text-blue-400 transition"
